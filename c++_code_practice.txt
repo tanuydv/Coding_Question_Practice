@@ -1,0 +1,1247 @@
+Q1. SUM OF ALL EVEN NUMBERS.
+
+#WRONG
+
+// Online C++ compiler to run C++ program online
+#include <iostream>
+using namespace std;
+int main() {
+    // Write C++ code here
+    int n;
+    cin>>n;
+    int sum=0;
+    int i=2;
+    while (i<=n){
+        sum=sum+i;
+        i=i+2;
+    }
+    cout<<sum<<endl;
+    return 0;
+}
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+#RIGHT
+
+I
+
+#include<iostream>
+using namespace std; 
+int main(){
+int n,i,sum = 0; 
+cin>>n; 
+for(i=1;i<=n;i++){
+if(i%2==0){
+sum = sum + i; 
+}
+cout<<sum; 
+}
+return 0; 
+}
+
+
+II
+
+// Online C++ compiler to run C++ program online
+#include <iostream>
+using namespace std;
+int main() {
+    // Write C++ code here
+    int n;
+    cin>>n;
+    int sum=0;
+    int i=2;
+    while (i<=n){
+        if(i % 2 == 0){
+        sum=sum+i;
+        }
+        i++;
+    }
+    cout<<sum<<endl;
+    return 0;
+}
+
+
+
+==========================================================================================================================================================================
+
+
+
+Q2. FAHRENHEIT TO CELCIUS
+
+ #include<iostream>
+using namespace std;
+
+int main()
+{
+  float n;
+  cin>>n;
+  float celcius=(n-32)*(0.5556);
+  cout<<celcius;
+  return 0;
+
+}
+
+==========================================================================================================================================================================
+
+Q3. CHECK WETHER NO. IS PRIME OR NOT WITH WHILE AND IF LOOP
+
+
+ #include<iostream>
+using namespace std;
+
+int main()
+{
+  int n,i=1,sum=0;
+  cin>>n;
+  while(i<=n)
+  {
+      if(n%i==0){
+          sum=sum+1;
+      }
+      i++;
+  }
+  if(sum==2){
+      cout<<"prime";
+  }
+  else{
+      cout<<"not prime";
+  }
+  return 0;
+
+}
+
+==========================================================================================================================================================================
+
+
+
+Q4.STAR PATTERN PRINT 
+
+*
+**
+***
+****
+*****
+
+
+ #include<iostream>
+using namespace std;
+
+int main()
+{
+  int n,i=1,sum=0;
+  cin>>n;
+  while(i<=n)
+  {
+      if(n%i==0){
+          sum=sum+1;
+      }
+      i++;
+  }
+  if(sum==2){
+      cout<<"prime";
+  }
+  else{
+      cout<<"not prime";
+  }
+  return 0;
+
+}
+
+
+
+
+
+==========================================================================================================================================================================
+
+Q5. PRINTING NUMBER PATTERN
+
+1
+2 3
+4 5 6
+7 8 9 10
+11 12 13 14 15 
+
+
+
+// Online C++ compiler to run C++ program online
+#include <iostream>
+using namespace std;
+int main() {
+    // Write C++ code here
+    int n;
+    cin>>n;
+    int i =1;
+    int count = 1;
+    while (i<=n){
+        int j = 1;
+        while (j<=i){
+            cout<<count;
+            count=count+1;
+            j=j+1;
+        }
+        cout<<endl;
+        i=i+1;
+    }
+
+    return 0;
+}
+
+
+==========================================================================================================================================================================
+
+Q6. PRINTING NUMBER PATTERN
+
+
+1
+2 3
+3 4 5
+4 5 6 7
+5 6 7 8 9
+6 7 8 9 10 11
+
+
+// Online C++ compiler to run C++ program online
+#include <iostream>
+using namespace std;
+int main() {
+    // Write C++ code here
+    int n;
+    cin>>n;
+    int i =1;
+    while (i<=n){
+        int j = 1;
+        int count = i;
+        while (j<=i){
+            cout<<count<<" ";
+            count=count+1;
+            j=j+1;
+        }
+        cout<<endl;
+        i=i+1;
+    }
+
+    return 0;
+}
+
+
+
+==========================================================================================================================================================================
+
+Q7.PRINTING NUMBER PATTERN
+
+1
+21
+321
+4321
+54321
+
+
+// Online C++ compiler to run C++ program online
+#include <iostream>
+using namespace std;
+int main() {
+    // Write C++ code here
+    int n;
+    cin>>n;
+    int i =1;
+    while (i<=n){
+        int j = 1;
+        int count = i;
+        while (j<=i){
+            cout<<i-j+1;
+            j=j+1;
+        }
+        cout<<endl;
+        i=i+1;
+    }
+
+    return 0;
+}
+
+
+
+==========================================================================================================================================================================
+
+Q8.PRINTING LETTER PATTERN
+
+ABCDEF
+ABCDEF
+ABCDEF
+ABCDEF
+ABCDEF
+ABCDEF
+
+
+
+
+
+{
+    // Write C++ code here
+    int n;
+    cin>>n;
+    int i =1;
+    
+    while (i<=n){
+        int j = 1;
+        
+        while (j<=n){
+            char ch = 'A'+j-1;
+            cout<<ch;
+            j=j+1;
+        }
+        cout<<endl;
+        i=i+1;
+    }
+
+    return 0;
+}
+
+
+
+
+
+==========================================================================================================================================================================
+Q8.PRINTING LETTER PATTERN
+
+
+A B C D 
+E F G H 
+I J K L 
+M N O P 
+
+
+#include<iostream>
+using namespace std;
+int main()
+{
+    // Write C++ code here
+    int n;
+    cin>>n;
+    char ch = 'A';
+    int i =1;
+    while (i<=n){
+        int j = 1;
+        while (j<=n){
+            cout<<ch<<" ";
+            ch=ch+1;
+            j=j+1;
+        }
+        cout<<endl;
+        i=i+1;
+    }
+
+    return 0;
+}
+
+
+========================================================================================================================================================================
+
+Q9.PRINTING LETTER PATTERN
+
+ABCDE
+BCDEF
+CDEFG
+DEFGH
+EFGHI
+
+
+#include<iostream>
+using namespace std;
+int main()
+{
+    // Write C++ code here
+    int n; 
+    cin>>n;
+    int i =1;
+    char ch = 'A';
+    while (i<=n){
+        int j = 1;
+        while (j<=n){
+             char ch = 'A'+i+j-2;
+            cout<<ch;
+            ch=ch+1;
+            j=j+1;
+        }
+        cout<<endl;
+        i=i+1;
+    }
+
+    return 0;
+}
+
+
+
+
+========================================================================================================================================================================
+
+
+Q10.PRINTING LETTER PATTERN
+
+
+A
+BB
+CCC
+DDDD
+EEEEE
+FFFFFF
+GGGGGGG
+
+
+
+#include<iostream>
+using namespace std;
+int main()
+{
+    // Write C++ code here
+    int n; 
+    cin>>n;
+    int i =1;
+    char ch = 'A';
+    while (i<=n){
+        int j = 1;
+        while (j<=i){
+             char ch = 'A'+i-1;
+            cout<<ch;
+            ch=ch+1;
+            j=j+1;
+        }
+        cout<<endl;
+        i=i+1;
+    }
+
+    return 0;
+}
+
+
+
+========================================================================================================================================================================
+
+
+Q11.PRINTING LETTER PATTERN
+
+
+A
+BC
+CDE
+DEFG
+EFGHI
+
+
+#include<iostream>
+using namespace std;
+int main()
+{
+    // Write C++ code here
+    int n; 
+    cin>>n;
+    int i =1;
+    char ch = 'A';
+    while (i<=n){
+        int j = 1;
+        while (j<=i){
+             char ch = 'A'+i+j-2;
+            cout<<ch;
+            ch=ch+1;
+            j=j+1;
+        }
+        cout<<endl;
+        i=i+1;
+    }
+
+    return 0;
+}
+
+
+========================================================================================================================================================================
+
+
+Q12.PRINTING LETTER PATTERN
+
+
+E 
+D E 
+C D E 
+B C D E 
+A B C D E 
+
+
+
+
+#include<iostream>
+using namespace std;
+int main()
+{
+    // Write C++ code here
+    int n; 
+    cin>>n;
+    int i =1;
+    while (i<=n){
+        int j = 1;
+        char ch='A'+n-i;
+        while (j<=i){
+            cout<<ch<<" ";
+            ch=ch+1;
+            j=j+1;
+        }
+        cout<<endl;
+        i=i+1;
+    }
+
+    return 0;
+}
+
+
+========================================================================================================================================================================
+
+
+Q12.PRINTING STAR PATTERN
+
+
+    *
+   **
+  ***
+ ****
+*****
+
+#include<iostream>
+using namespace std;
+int main()
+{
+    // Write C++ code here
+    int n; 
+    cin>>n;
+    int i =1;
+    while (i<=n){
+       int space = n-i;
+       while(space){
+           cout<<" ";
+           space=space-1;
+       }
+       int j=1;
+       while(j<=i){
+           cout<<"*";
+           j=j+1;
+       }
+       cout<<endl;
+       i=i+1;
+    }
+
+    return 0;
+}
+
+
+========================================================================================================================================================================
+
+
+LEETCODE 1281. Subtract the Product and Sum of Digits of an Integer
+
+
+class Solution {
+public:
+    int subtractProductAndSum(int n) {
+        int prod = 1;
+        int sum = 0;
+        while(n!=0){
+            int digit = n%10;
+            prod = prod * digit;
+            sum =sum + digit;
+            n = n/10;
+        }
+        int answer = prod - sum ;
+        return answer;
+    }
+};
+
+
+
+
+
+
+
+
+
+
+========================================================================================================================================================================
+
+LEETCODE - 191. Number of 1 Bits
+
+class Solution {
+public:
+    int hammingWeight(uint32_t n) {
+        int count = 0;
+        while(n!=0){
+            if(n&1){
+                count++;
+            }
+            n = n >> 1;
+        } 
+        return count;
+    }
+};
+
+
+
+
+
+========================================================================================================================================================================
+
+LEETCODE 7. Reverse Integer
+
+
+#include<math.h>
+class Solution {
+public:
+    int reverse(int x) {
+        int sum = 0;
+        while (x!=0){
+            int remainder = x % 10;
+            sum = sum*10 + remainder;
+            x=x/10;
+        }
+        return sum;
+        
+    }
+};
+
+
+========================================================================================================================================================================
+LEETCODE 1009. Complement of Base 10 Integer
+
+class Solution {
+public:
+    int bitwiseComplement(int n) {
+        auto cache = n; int bit = 1;
+        do  {
+            n = n ^ bit;
+            bit = bit << 1;
+            cache = cache >> 1;
+        } while (cache);
+        return n;
+    }
+};
+
+
+
+
+========================================================================================================================================================================
+
+
+Q. Decimal to Binary Conversion
+
+#include<iostream>
+#include<math.h>
+using namespace std;
+
+int main(){
+    int n;
+    cin>>n;
+
+    int ans = 0;
+    int i = 0;
+    while (n!=0){
+        int bit = n & 1;
+        ans = (bit * pow(10,i)) + ans;
+        n = n >> 1;
+        i++ ;
+
+    }
+    cout<< "Answer is "<<ans<<endl;
+}
+
+
+
+========================================================================================================================================================================
+
+Q. Cmplement of base10
+
+
+
+========================================================================================================================================================================
+
+SWITCH STATEMENT
+
+#include<iostream>
+#include<math.h>
+using namespace std;
+
+int main(){
+  char ch ='1';
+  int num = 1;
+  cout<<endl;
+  switch(ch){
+      case 1: cout<<"first"<<endl;
+              cout<<"first again"<<endl;
+              break;
+      case '1': cout<<"value of num is"<<num<<endl;
+              break;
+              }
+             break;
+      default: cout<< " it is default case"<<endl;
+
+
+
+========================================================================================================================================================================
+
+Q. MINI CALCULATOR WITH SWITCH STATEMENT: 
+
+// Online C++ compiler to run C++ program online
+#include <iostream>
+using namespace std;
+int main() {
+    int a,b;
+    cout<<"enter value of a"<<endl;
+    cin>>a;
+    cout<<"enter value of b"<<endl;
+    cin>>b;
+    char op;
+    cout<<"enter operator"<<endl;
+    cin>>op;
+    switch(op){ //2*OP HENCE YOU CAN GIVE ANY EXPRESSION TO THIS SWITCH STATEMENT 
+        case '+': cout<<"a+b="<<a+b<<endl;
+        break;
+        case '-': cout<<"a-b="<<a-b<<endl;
+        break;
+        case '*': cout<<"a*b="<<a*b<<endl;
+        break;
+        case '/': cout<<"a/b="<<a/b<<endl;
+        break;
+    }
+    return 0;
+}
+
+
+
+
+
+========================================================================================================================================================================
+
+Q. Find wether a no. is positive or not
+
+// Online C++ compiler to run C++ program online
+#include <iostream>
+using namespace std ;
+int main() {
+    int a;
+    cin>>a;
+    if(a<0){
+        cout<<"Negative"<<endl;
+    }
+    else{
+        cout<<"Positive"<<endl;
+    
+    }
+    return 0;
+}
+#####PREPINSTA#####
+
+========================================================================================================================================================================
+
+Q.SUM OF N NUMBERS
+
+#include <iostream>
+using namespace std ;
+int main() {
+    int n,sum=0,i;
+    cout<<"Write upto which sum is needed"<<endl;
+    cin>>n;
+    for(i=0;i<=n;i++)
+    {
+       sum=sum+i ;
+    }
+    cout<<"sum of n numbers is "<<sum<<endl;
+
+#####PREPINSTA#####
+
+========================================================================================================================================================================
+
+Q. PRIME NUMBER WITHIN RANGE
+
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+   int a,b,i;
+   cout<<"starting"<<endl;
+   cin>>a;
+   cout<<"ending"<<endl;
+   cin>>b;
+   for(i=a;i<=b;i++){
+       if(i<2){
+           continue;
+       }
+       else if(i==2){
+           cout<<i<<endl;
+       }
+       else{
+           if(i%2==0)
+               continue;
+           else
+            cout<<i<<endl;
+           }
+       }i++;
+   }
+
+
+#####PREPINSTA#####
+
+========================================================================================================================================================================
+Q.SUM OF DIGITS IN A NUMBE
+
+#include <iostream>
+
+using namespace std;
+
+int main(){
+    int a,sum=0,rem;
+    cout<<"write number"<<endl;
+    cin>>a;
+    while(a!=0){
+        rem=a%10;
+        sum=sum+rem;
+        a=a/10;
+    }
+    cout<<sum<<endl;
+}
+
+
+
+#####PREPINSTA#####
+========================================================================================================================================================================
+Q. Reverse of a Number
+
+#include <iostream>
+using namespace std;
+
+int main(){
+    int a,rev=0,digit,count=0,i;
+    cout<<"enter number"<<endl;
+    cin>>a;
+        while(a!=0)
+        {
+                digit=a%10;
+                rev=rev*10+digit;
+                a=a/10;
+        }cout<<"reverse num = "<<rev<<endl;
+}
+
+
+#####PREPINSTA#####
+========================================================================================================================================================================
+
+Q. PALINDROME OR NOT 
+
+#include <iostream>
+using namespace std;
+
+int main()
+{
+   int a,rev=0,digit,count=0,i;
+    cout<<"enter number"<<endl;
+    cin>>a;
+    int temp=a;
+        while(temp!=0)
+        {
+                digit=temp%10;
+                rev=rev*10+digit;
+                temp=temp/10;
+        }cout<<"reverse num = "<<rev<<endl;
+        if (rev==a){
+            cout<<"palindrom no."<<endl;
+        }
+}
+
+
+#####PREPINSTA#####
+========================================================================================================================================================================
+Q. ARMSTRONG NUMBER
+
+#include <iostream>
+#include <math.h>
+using namespace std;
+int main()
+{
+    int n,temp,count=0,digit,digit1,sum=0,temp1;
+    cout<<"enter the number"<<endl;
+    cin>>n;
+    temp=n;
+    temp1=n;
+    
+    while(temp=0){
+        temp=temp/10;
+        count+=1;
+    }
+    
+    while(temp1!=0){
+        digit1=temp1%10;
+        sum=sum+pow(digit1,count);
+        temp1=temp1/10;
+    }
+    cout<<"armstrong sum"<<sum<<endl;
+    
+}
+
+
+#####PREPINSTA#####
+========================================================================================================================================================================
+Q. ARMSTRONG NUMBER IN A RANGE
+
+#include <iostream>
+#include <math.h>
+using namespace std;
+int main()
+{
+    int n,temp,count=0,digit,digit1,sum=0,temp1;
+    cout<<"enter the number"<<endl;
+    cin>>n;
+    if(n>=100 && n<=400){
+    temp=n;
+    temp1=n;
+    
+    while(temp=0){
+        temp=temp/10;
+        count+=1;
+    }
+    
+    while(temp1!=0){
+        digit1=temp1%10;
+        sum=sum+pow(digit1,count);
+        temp1=temp1/10;
+    }
+    cout<<"armstrong sum"<<sum<<endl;
+    }
+    
+}
+
+
+#####PREPINSTA#####
+========================================================================================================================================================================
+Q. FIBONACCI SERIES
+ 
+
+#include <iostream>
+#include <math.h>
+using namespace std;
+int main()
+{
+    int n,a=0,b=1,c,i;
+    cout<<"enter the no. of elements in the series"<<endl;
+    cin>>n;
+    cout<<a<<","<<b<<",";
+    for ( i = 2 ;i < n ; i++){
+        c=a+b;
+        a=b;
+        b=c;
+        cout<<c<<",";
+    }
+}
+
+
+
+#####PREPINSTA#####
+========================================================================================================================================================================
+
+Q. FIND THE Nth TERM IN FIBONACCI SERIES
+
+// Fibonacci Series using Space Optimized Method
+#include<bits/stdc++.h>
+using namespace std;
+ 
+int F(int N)
+{
+    int a = 0, b = 1, c, i;
+    if( N == 0)
+        return a;
+    for(i = 2; i <= N; i++)
+    {
+       c = a + b;
+       a = b;
+       b = c;
+    }
+    return b;
+}
+ 
+// Driver code
+int main()
+{
+    int N = 5;
+     
+    cout << F(N);
+    return 0;
+}
+
+
+#####PREPINSTA#####?????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????????
+========================================================================================================================================================================
+
+
+#include <iostream>
+#include <math.h>
+using namespace std;
+int main()
+{
+    int n,fact=1,i;
+    cout<<"upto which number"<<endl;
+    cin>>n;
+    for(i=1;i<=n;i++){
+        fact=fact*i;
+    }
+    cout<<fact<<endl;
+}
+
+
+#####PREPINSTA#####
+========================================================================================================================================================================
+
+Q. FACTORS OF A NUMBER
+
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    int n,i ;
+    cin>>n;
+    for (i=1;i<=n;i++){
+        if(n%i==0){
+            cout<<i;
+        }
+    }
+}
+
+#####PREPINSTA#####
+========================================================================================================================================================================
+
+Q. PRIME FACTORS OF A NUMBER
+
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    int n,i,count=0,j ;
+    cin>>n;
+    for (i=1;i<=n;i++)
+    {
+        if(n%i==0)
+        {
+            for(j=1;j<=i;j++){
+                if(i%j==0)
+                {
+                    count+=1;
+                    if(count<=2){
+                        cout<<i<<endl;
+                    }
+                }
+                
+            }
+        }
+    }
+}
+
+#####PREPINSTA#####
+========================================================================================================================================================================
+
+Q. STRONG NUMBER 
+
+#include <iostream>
+using namespace std;
+
+int main()
+{
+   int n,temp,rem,sum=0,i,fact=1;
+   cout<<"write the number"<<endl;
+   cin>>n;
+   temp=n;
+   
+   while(temp)
+   {
+       rem=temp%10;
+       for(i=1;i<=rem;i++)
+           {
+               fact=fact*i;
+           }
+        temp=temp/10;
+        sum=sum+fact;
+        fact=1;
+   }
+   cout<<sum<<endl;
+}
+
+#####PREPINSTA#####
+========================================================================================================================================================================
+Q. AUTOMORPHIC NUMBER -
+
+
+#include <iostream>
+#include <math.h>
+using namespace std;
+int main()
+{
+    int n,square,temp,rem,count=0,digit,final_num = 0,i;
+    cin>>n;
+    digit=n;
+    temp=n;
+    while(digit)
+    {
+        digit=digit/10;
+        count+=1;
+    }cout<<"digits in a no. is "<<count<<endl;
+    square=pow(n,2);
+    cout<<"square is "<<square<<endl;
+    for(i=0;i<=count;i++){
+        rem=temp%10;
+        final_num = final_num + rem*pow(10,i) ;
+        temp=temp/10;
+    }cout<<"final_num is "<<final_num<<endl;
+    if ( final_num == n){
+        cout<<"Automorphic number"<<endl;
+    }
+    else {
+        cout<<" not and Automorphic number"<<endl;
+    }
+}
+
+#####PREPINSTA#####
+========================================================================================================================================================================
+
+Q. HARSHAD NUMBER 
+
+#include <iostream>
+#include <math.h>
+using namespace std;
+int main()
+{
+    int n,square,temp,rem,count=0,digit,final_num = 0,i, sum = 0;
+    cin>>n;
+    temp=n;
+    while(temp)
+    {
+        rem = temp%10;
+        sum = sum + rem;
+        temp=temp/10;
+    }
+    if (n%sum==0){
+        cout<<"number is harshad number"<<endl;
+    }
+    else{
+       cout<<"number is not a harshad number"<<endl; 
+    }
+    
+}
+
+#####PREPINSTA#####
+========================================================================================================================================================================
+Q.ABUNDANT NUMBER 
+
+
+#include <iostream>
+#include <math.h>
+using namespace std;
+int main()
+{
+    int n,square,temp,rem,count=0,digit,final_num = 0,i, sum = 0;
+    cin>>n;
+    for(i=1;i<n;i++)
+    {
+        if(n%i==0){
+            cout<<i<<endl;
+            sum=sum+i;
+        }
+    }if (sum>n){
+        cout<<"Abundant Number"<<endl;
+    }
+    else {
+         cout<<"Not an Abundant Number"<<endl;
+    }
+}
+
+#####PREPINSTA#####
+========================================================================================================================================================================
+Q. HCF
+
+#include <iostream>
+using namespace std;
+int main(){
+    int num1,num2,i,hcf=1;
+    cout<<"write 1st num"<<endl;
+    cin>>num1;
+    cout<<"write 2nd num"<<endl;
+    cin>>num2;
+    for(i=1;i<=num1 || i<=num2 ;i++){
+        if(num1 % i == 0 && num2 % i == 0){
+            hcf=i;
+        }
+    }
+    cout<<"hcf is "<<hcf<<endl;
+    
+}
+
+
+
+#####PREPINSTA#####
+========================================================================================================================================================================
+Q.LCM
+
+
+#include <iostream>
+using namespace std;
+int main(){
+    int a,b,i,lcm=1;
+    cout<<"write 1st num"<<endl;
+    cin>>a;
+    cout<<"write 2nd num"<<endl;
+    cin>>b;
+    int max = (a > b)? a : b;
+    for(i=max;i<=a*b ;i=i+max){
+        if(i % a == 0 && i % b == 0){
+            lcm=i;
+            break;
+        }
+    }
+    cout<<"lcm is "<<lcm<<endl;
+    
+}
+
+
+
+#####PREPINSTA#####
+========================================================================================================================================================================
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#####PREPINSTA#####
+========================================================================================================================================================================
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
